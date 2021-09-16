@@ -1,6 +1,0 @@
-name: BookOnline
-version: 1.0
-main: r_u_b_i_k.bookonline.BookOnline
-api-version: 1.16
-prefix: BookOnline
-authors: [ R_u_B_i_K ]
