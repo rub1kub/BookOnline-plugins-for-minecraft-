@@ -6,3 +6,5 @@ English:
 This plugin shows whether the author of the book is currently online or not. After the player signs his book, the status will appear in the description of the book after his nickname.
 It works on versions 1.16+, 1.17+
 Sorry, but There is no English version of the plugin yet
+
+https://www.spigotmc.org/threads/bookonline.526038/
