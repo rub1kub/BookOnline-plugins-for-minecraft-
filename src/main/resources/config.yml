@@ -1,0 +1,7 @@
+messages:
+  commands:
+    reload: "&aСonfig reloaded!"
+    donthaveperrm: "&cYou don't have permission to this command"
+  events:
+    online: "&a(online)" #сообщение, если игрок в сети
+    offline: "&c(offline)" #сообщение, если игрок не в сети
