@@ -13,6 +13,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 
 public class EventListener implements Listener {
+
+    private BookOnline plugin;
+    EventListener(BookOnline plugin){
+        this.plugin = plugin;
+    }
+    
     @EventHandler
     public void onInventoryOpenEvent(InventoryOpenEvent e) {
         Inventory inv = e.getInventory();
@@ -57,8 +63,8 @@ public class EventListener implements Listener {
     }
 
     public void changeAuthor(ItemStack item) {
-        String online = "&a(в сети)";
-        String offline = "&c(не в сети)";
+        String online = plugin.getConfig().getString("messages.events.online"); //"&a(в сети)";
+        String offline = plugin.getConfig().getString("messages.events.offline");
         BookMeta book = (BookMeta)item.getItemMeta();
         if (book != null) {
             if (book.getAuthor() != null) {
